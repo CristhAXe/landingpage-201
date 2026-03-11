@@ -1,4 +1,4 @@
-# landingpage-201
+# landingpage-201 Enter tech School Tarea - 01
 
 ## Introduccion
 Esta landing page se realizo con la ayuda y mejoraria, de Copilot y Chatgpt para mejorar la visibilidad del codigo y integrar funciones como estilos dentro de la pagina.
