@@ -1,0 +1,206 @@
+body {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+/* Barra superior */
+.contacto{
+    background-color: #000;
+    color: #fff; 
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+#contacto a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+}
+/* Header */
+header {
+    background-color: #333;
+    padding: 1rem 0;
+}
+
+#contacto {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+#contacto a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.75rem 1.125rem;
+    transition: background-color 0.3s;
+}
+
+#contacto a:hover {
+    background-color: #555;
+}
+
+/* Contenido principal */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Productos */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 25rem;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.top h2 {
+    margin: 0;
+    font-size: 1.75rem;
+}
+
+.top img {
+    width: 12rem;
+    height: 16rem;
+    object-fit: cover;
+}
+
+.product p {
+    margin: 0.75rem 0;
+}
+
+/* Botón comprar */
+.buy-button {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.buy-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.buy-button:active {
+    background-color: white;
+    color: black;
+}
+
+/* Sección bienvenida */
+#bienvenida {
+    text-align: center;
+    padding: 3.75rem 1.875rem;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Preguntas */
+#preguntas {
+    background-color: #000;
+    color: #fff;
+    padding: 1.875rem;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer input {
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 4px;
+    border: none;
+}
+
+footer button {
+    padding: 0.75rem 1.5rem;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+footer button:hover {
+    background-color: #777;
+}
+
+/* Botón enviar */
+#Button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 1.125rem 2.25rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    body {
+        padding: 0 10px;
+        font-size: 1rem;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    #contacto {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    #bienvenida {
+        padding: 2rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    #contacto a {
+        font-size: 1rem;
+    }
+
+    #Button {
+        padding: 0.8rem 1.5rem;
+    }
+}
