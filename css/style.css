@@ -1,216 +1,259 @@
-/* ===== RESET BÁSICO ===== */
+/* ===== GRID PRINCIPAL ===== */
 body {
-    margin: 0;
-    font-size: 1.1rem;
+  display: grid;
+  grid-template-areas: 
+    "top"
+    "header"
+    "nav"
+    "category"
+    "aside"
+    "main"
+    "footer";
+  max-width: auto;
+  margin:  0;
+
+}
+top { grid-area: top; }
+header { grid-area: header; }
+nav { grid-area: nav; }
+category { grid-area: category; }
+aside { grid-area: aside; }
+main { grid-area: main; }
+footer { grid-area: footer; }
+
+/* ===== BIEVENIDA ===== */
+/* TÍTULO PRINCIPAL */
+.titulo {
+  font-family: "Times New Roman", Georgia, serif;
+  font-size: 3rem;
+  font-weight: bold;;
 }
 
-/* ===== HEADER / NAV ===== */
-header {
-    background: rgb(255, 255, 255);
-    padding: 1rem 0;
+/* SUBTÍTULO */
+.subtitulo {
+  font-family: Georgia, serif;
+  font-size: 1.2rem;
+  color: #555;
 }
 
-#contacto {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
+/* CONTENEDOR */
+#bienvenida {
+  text-align: center;
+  padding: 1rem 0;
+  border-top: 2px solid black;
+  border-bottom: 1px solid #ccc;
 }
 
-#contacto a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    padding: 0.75rem 1.125rem;
-    transition: 0.3s;
+/* ===== HEADER ===== */
+header {    
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0.5rem 0;
 }
 
-#contacto a:hover {
-    background: #9897ed;
-    border-radius: 8px;
+header a {
+  color: black;
+  text-decoration: none;
+  padding: 0.75rem 1.125rem;
+  transition: 0.3s;
 }
 
-/* ===== CONTENIDO ===== */
-main {
-    max-width: 1200px;
-    margin: auto;
+header a:hover {
+  background: #9897ed;
+  border-radius: 8px;
 }
 
+/* ===== NAV ===== */
+nav {
+  background: #fcfcfc;
+  padding: 1rem 15rem;
+  display: flex;
+  font-family: "Times New Roman", Georgia, serif;
+  font-size: 1.2rem;
+  justify-content: center;
+  gap: 2rem;
+}
+/* =====category */
+category {
+  background: #b5b5b5;
+  color: #fff;
+  font: 1.4rem "Times New Roman", Georgia, serif;
+  padding: 1rem 15rem;
+  text-align: center;
+}
+
+/* ===== ASIDE ===== */
+aside {
+  background: #f0f0f0;
+  padding: 1rem 15rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+aside ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none; /* quita los puntos */
+  padding: 0;
+}
 /* ===== PRODUCTOS ===== */
-.products {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-    gap: 2rem;
-    margin: 2rem 0;
+.productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  padding: 2rem 15rem 2rem 15rem;
 }
 
 .product {
-    border: 1px solid #ddd;
-    padding: 1.5rem;
-    text-align: center;
-    background: #f9f9f9;
-    min-height: 25rem;
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  text-align: center;
+  background: #fbfbfb;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-/* contenido superior del producto */
-.top {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.75rem;
+.product img {
+  width: 12rem;
+  height: 16rem;
+  object-fit: cover;
+  margin: 0 auto;
 }
 
-.top h2 {
-    margin: 0;
-    font-size: 1.75rem;
-}
-
-.top img {
-    width: 12rem;
-    height: 16rem;
-    object-fit: cover;
-}
-
-.product p {
-    margin: 0.75rem 0;
-}
-
-/* ===== BOTÓN COMPRAR ===== */
+/* ===== BOTÓN ===== */
 .buy-button {
-    background: black;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: 0.3s;
+  background: black;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
 .buy-button:hover {
-    background: white;
-    color: black;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: 1px solid black;
 }
-
-.buy-button:active {
-    transform: scale(0.95);
+/* ===== DATOS DE COMPRA ===== */
+.datos-button {
+  background: rgb(255, 255, 255);
+  color: rgb(226, 224, 224);
+  border-radius: 10px;
+  padding: 10px;
+  text-decoration: none;
+  transition: 0.3s;
 }
-
-/* ===== SECCIÓN BIENVENIDA ===== */
-#bienvenida {
-    text-align: center;
-    padding: 1.5rem ;
-    background: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    font-family: 'Times New Roman', Times, serif;
-}
-
-/* ===== PREGUNTAS ===== */
-#preguntas {
-    background: black;
-    color: white;
-    padding: 2rem;
-    text-align: center;
-}
-
+.select
+    {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    }
 /* ===== FOOTER ===== */
 footer {
-    background: black;
-    color: white;
-    padding: 2rem;
-    text-align: center;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 2rem;
+  text-align: center;
 }
 
 footer form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 footer input {
-    padding: 0.5rem;
-    width: 100%;
-    max-width: 300px;
-    border-radius: 4px;
-    border: none;
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 4px;
+  border: none;
 }
 
 footer button {
-    padding: 0.75rem 1.5rem;
-    background: #555;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  padding: 0.75rem 1.5rem;
+  background: #555;
+  color: white;
+  border: none;
+  border-radius: 4px;
 }
 
-footer button:hover {
-    background: #777;
-}
-
-/* ===== BOTÓN ENVIAR ===== */
-#Button {
-    background: black;
-    color: white;
-    border: none;
-    padding: 1rem 2rem;
-    font-size: 1.3rem;
-    cursor: pointer;
-}
-/* Seccion testimonios */
-#testimonios {
-    background: #ffffff;
-    padding-bottom: 10rem;
-    padding-top: 5rem;
+#compra-main {
     text-align: center;
-}
-#testimonios img {
-    width: 29rem;
-    flex: auto;
-    flex-direction: row;
-    font-size: 2rem;
-}
-/* ===== SECCIÓN TÉRMINOS ===== */
-#Terminos {
-    background: #000000;
-    color: #7d7c7c;
-    padding: 0rem;
-    margin-top: 2rem;
-    border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 /* ===== RESPONSIVE ===== */
-
 @media (max-width: 768px) {
 
-    body {
-        padding: 0 10px;
-        font-size: 1rem;
-    }
+  /* GRID en columna */
+  body {
+  display: grid;
+  grid-template-areas: 
+    "top"
+    "header"
+    "nav"
+    "category"
+    "aside"
+    "main"
+    "footer";
+  max-width: auto;
+  margin:  0;
+  }
 
-    .products {
-        grid-template-columns: 1fr;
-    }
+  nav {
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
 
-    #contacto {
-        flex-direction: column;
-        gap: 0.75rem;
-    }
+ category {
+    padding: 1rem;
+    text-align: center;
+    background-color: #8d8888 ;
+    color: #fff;
+  }
+  aside {
+    padding: 1rem;
+  }
+  .categorias {
+    padding: 1rem;
+  }
+  aside ul {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    #bienvenida {
-        padding: 2rem 1rem;
-    }
-}
+ 
+  .productos {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    
+  }
 
-@media (max-width: 480px) {
 
-    #contacto a {
-        font-size: 1rem;
-    }
+  .product img {
+    width: 100%;
+    height: auto;
+  }
 
-    #Button {
-        padding: 0.8rem 1.5rem;
-    }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+
 }
