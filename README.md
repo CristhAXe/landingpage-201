@@ -1,10 +1,12 @@
 # landingpage-201 Enter tech School Tarea - 01
 
 ## Introduccion
-Esta landing page se realizo con la ayuda y mejoraria, de Copilot y Chatgpt para mejorar la visibilidad del codigo y integrar funciones como estilos dentro de la pagina.
+Esta landing page se realizo con la con la ayuda, de Copilot y Chatgpt solamente mejorando la visibilidad del codigo y integrar funciones como estilos dentro de la pagina.
 
-## Boceto
-Esta pagina es un inicio de boceto de una tienda de perfumes, solo muestra el catalogo limitado de 6 productos y una pequeña descripcion, eso indica que en un futuro se puede agregar mas y  con una mejor incorporacion.
+## Boceto 1.1
+- Cuenta actualmente con 6 perfumes, con su boton de comprar que te manda a comprar por medio de un numero telefonico.
+- Tiene modelo style.css responsive y basado en grid-template-areas: 
+- Se incluyo pasarela de pagos simuladas (en proceso de terminar)
 
 ## IA
-Se uso Chatgpt y copilot, para modificar contenido de .CSS, tambien la documentacion y fue una ayuda en el contenido de styles.css.
+Se uso Chatgpt y copilot, para modificar contenido de .CSS, tambien la documentacion y fue una ayuda en el contenido de styles.css y index.html , sobretodo se uso para agregar contenido previamente analizado y comprendido.
