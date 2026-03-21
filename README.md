@@ -10,3 +10,7 @@ Esta landing page se realizo con la con la ayuda, de Copilot y Chatgpt solamente
 
 ## IA
 Se uso Chatgpt y copilot, para modificar contenido de .CSS, tambien la documentacion y fue una ayuda en el contenido de styles.css y index.html , sobretodo se uso para agregar contenido previamente analizado y comprendido.
+
+
+
+   

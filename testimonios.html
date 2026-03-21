@@ -1,21 +1,28 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Testimonios</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link href="css/style.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
+<div class="relative h-[80vh]">
+  <div class="absolute inset-0 bg-[url('img/perfum.png')] bg-cover bg-center bg-fixed"></div>
+  <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent pointer-events-none"></div>
+</div>
 
   <section id="bienvenida">
     <h1 class="titulo">Cristh Perfumes</h1>
-    <p class="subtitulo">Opiniones de nuestros clientes</p>
+    <p class="subtitulo">Elegancia en cada fragancia</p>
   </section>
 
-
+</nav>
   <nav id="contacto">
+     <a href="home.html">Portada</a>
     <a href="index.html">Inicio</a>
     <a href="testimonios.html">Testimonios</a>
     <a href="compra.html">Compra</a>
@@ -23,34 +30,95 @@
 
 
   <main>
-    <section class="productos">
+    <section id="testimonios">
+        <div class="container mx-auto my-10" >
+          <blockquote class="text-center text-2xl font-semibold text-gray-900 italic dark:text-black">
+             Mira lo que la
+          <span class="relative inline-block before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-pink-500">
+           <span class="relative text-white white:text-gray-950">gente</span>
+             </span>
+              dice de nosotros.
+          </blockquote>
+            
+<div class="space-y-6 mt-10">
 
-      <article class="product">
-        <p>"Excelente calidad, lo recomiendo totalmente."</p>
-        <strong>- Juan Pérez</strong>
-      </article>
+  <div class="flex items-center gap-6 bg-white shadow-md rounded-lg p-6 max-w-3xl mx-auto hover:shadow-xl transition">
+    <div class="flex-1">
+      <h3 class="font-bold text-lg">Andrea Salazar</h3>
+      <p class="text-gray-600 mt-2">
+        El aroma es increíble, dura todo el día y recibí muchos cumplidos.
+      </p>
+    </div>
+    <img src="personimg/user1.png" class="w-20 h-20 rounded-full object-cover">
+  </div>
 
-      <article class="product">
-        <p>"El aroma dura todo el día, muy satisfecho."</p>
-        <strong>- María Gómez</strong>
-      </article>
+  <div class="flex items-center gap-6 bg-white shadow-md rounded-lg p-6 max-w-3xl mx-auto hover:shadow-xl transition">
+    <div class="flex-1">
+      <h3 class="font-bold text-lg">Marcos Velásquez</h3>
+      <p class="text-gray-600 mt-2">
+        Muy buena calidad, definitivamente volveré a comprar aquí.
+      </p>
+    </div>
+    <img src="personimg/user2.png" class="w-20 h-20 rounded-full object-cover">
+  </div>
 
-      <article class="product">
-        <p>"Producto elegante y sofisticado."</p>
-        <strong>- Carlos Rodríguez</strong>
-      </article>
+  <div class="flex items-center gap-6 bg-white shadow-md rounded-lg p-6 max-w-3xl mx-auto hover:shadow-xl transition">
+    <div class="flex-1">
+      <h3 class="font-bold text-lg">Diego Fernández</h3>
+      <p class="text-gray-600 mt-2">
+        El envío fue rápido y el perfume superó mis expectativas.
+      </p>
+    </div>
+    <img src="personimg/user3.png" class="w-20 h-20 rounded-full object-cover">
+  </div>
 
-      <article class="product">
-        <p>"Muy buena presentación y entrega rápida."</p>
-        <strong>- Ana Sánchez</strong>
-      </article>
+  <div class="flex items-center gap-6 bg-white shadow-md rounded-lg p-6 max-w-3xl mx-auto hover:shadow-xl transition">
+    <div class="flex-1">
+      <h3 class="font-bold text-lg">Luis Herrera</h3>
+      <p class="text-gray-600 mt-2">
+        Fragancia elegante, perfecta para ocasiones importantes.
+      </p>
+    </div>
+    <img src="personimg/user4.png" class="w-20 h-20 rounded-full object-cover">
+  </div>
 
+</div>
+
+
+
+        
     </section>
+  
   </main>
 
   <footer>
-    <p>© 2026 Cristh Perfumes</p>
+
+    <section id="preguntas">
+      <br>
+      <h2>Preguntas frecuentes</h2>
+      <h3>¿Cómo comprar?</h3>
+      <p>Haz clic en "Comprar ahora".</p>
+      <h3>Tiempo de entrega</h3>
+      <p>3 a 5 días hábiles.</p>
+    </section>
+
+     <form>
+      <h2>Contáctanos</h2><br>
+      <input type="text" placeholder="Nombre" required><br><br>
+      <input type="email" placeholder="Email" required>
+      <br><br>
+      <button>Enviar</button>
+    </form>
+
+    <section id="Terminos">
+      <h2>Términos y condiciones</h2>
+      <p>Precios sujetos a cambios.</p>
+      <p>Pedidos pueden ser cancelados por seguridad.</p>
+      <p>Contacto: znkcristh@protonmail.com</p>
+    </section>
+
   </footer>
 
 </body>
+
 </html>

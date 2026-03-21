@@ -17,7 +17,6 @@ top { grid-area: top; }
 header { grid-area: header; }
 nav { grid-area: nav; }
 category { grid-area: category; }
-aside { grid-area: aside; }
 main { grid-area: main; }
 footer { grid-area: footer; }
 
@@ -33,13 +32,15 @@ footer { grid-area: footer; }
 .subtitulo {
   font-family: Georgia, serif;
   font-size: 1.2rem;
-  color: #555;
+  color: #b2b2b2;
 }
 
 /* CONTENEDOR */
 #bienvenida {
   text-align: center;
   padding: 1rem 0;
+  background: #000;
+  color: #fff;
   border-top: 2px solid black;
   border-bottom: 1px solid #ccc;
 }
@@ -66,7 +67,8 @@ header a:hover {
 
 /* ===== NAV ===== */
 nav {
-  background: #fcfcfc;
+  background: #000000;
+  color: #fff;
   padding: 1rem 15rem;
   display: flex;
   font-family: "Times New Roman", Georgia, serif;
@@ -76,7 +78,7 @@ nav {
 }
 /* =====category */
 category {
-  background: #b5b5b5;
+  background: #000000;
   color: #fff;
   font: 1.4rem "Times New Roman", Georgia, serif;
   padding: 1rem 15rem;
@@ -122,6 +124,13 @@ aside ul {
   object-fit: cover;
   margin: 0 auto;
 }
+.precio {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #000000; 
+
+  margin: 10px 0;
+}
 
 /* ===== BOTÓN ===== */
 .buy-button {
@@ -158,15 +167,15 @@ aside ul {
     }
 /* ===== FOOTER ===== */
 footer {
-  background: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  padding: 2rem;
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   text-align: center;
 }
 
 footer form {
   flex-direction: column;
   align-items: center;
+  padding: 1rem 0;
   gap: 1rem;
 }
 
@@ -176,11 +185,12 @@ footer input {
   max-width: 300px;
   border-radius: 4px;
   border: none;
+  color: #000;
 }
 
 footer button {
   padding: 0.75rem 1.5rem;
-  background: #555;
+  background: #26402c;
   color: white;
   border: none;
   border-radius: 4px;
@@ -193,6 +203,25 @@ footer button {
   gap: 2rem;
 }
 
+/* ===== TARGET ===== */
+    #elegantes:target {
+  border: 3px solid rgb(96, 96, 96);
+  background-color: #ffffff;
+  transform: scale(1.03);
+  transition: all 0.3s ease;
+}
+#clasicos:target {
+  border: 3px solid rgb(171, 169, 156);
+  background-color: #ffffff;
+  transform: scale(1.03);
+  transition: all 0.3s ease;
+}
+#frescos:target {
+  border: 3px solid rgb(116, 185, 235);
+  background-color: #ffffff;
+  transform: scale(1.03);
+  transition: all 0.3s ease;
+}
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
 

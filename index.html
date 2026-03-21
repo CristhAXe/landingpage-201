@@ -6,20 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mi producto</title>
   <link href="css/style.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
+<div class="relative h-[80vh]">
+  <div class="absolute inset-0 bg-[url('img/perfum.png')] bg-cover bg-center bg-fixed"></div>
+  <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent pointer-events-none"></div>
+</div>
 
   <section id="bienvenida">
     <h1 class="titulo">Cristh Perfumes</h1>
     <p class="subtitulo">Elegancia en cada fragancia</p>
   </section>
 
-  <header>
-    <h2>Menú</h2>
-  </header>
-
+</nav>
   <nav id="contacto">
+     <a href="home.html">Portada</a>
     <a href="index.html">Inicio</a>
     <a href="testimonios.html">Testimonios</a>
     <a href="compra.html">Compra</a>
@@ -31,74 +34,84 @@
   <aside>
     <ul>
       <li><a href="#elegantes">Elegantes</a></li>
-      <li><a href="#">Frescos</a></li>
-      <li><a href="#">Clásicos</a></li>
+      <li><a href="#frescos" >Frescos</a></li>
+      <li><a href="#clasicos">Clásicos</a></li>
     </ul>
   </aside>
 
-  <main>
-    <section class="productos">
+ <main>
+  <section class="productos grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 container mx-auto">
+        
+    <article class="product" id="frescos">
+      <h2>Christian Dior Sauvage</h2>
+      <img src="img/perfume1.png" alt="Perfume Christian Dior Sauvage">
+      <p>El mejor perfume para un hombre elegante.</p>
+      <p class="precio">S/ 420</p>
+      <a href="https://wa.me/51961274199?text=Hola,%20quiero%20comprar%20Christian%20Dior%20Sauvage" target="_blank" class="buy-button">
+        Comprar ahora
+      </a>
+    </article>
 
-      <article class="product">
-        <h2>Christian Dior Sauvage</h2>
-        <img src="img/perfume1.png" alt="Perfume Christian Dior Sauvage">
-        <p>El mejor perfume para un hombre elegante.</p>
-        <a href="https://wa.me/51961274199?text=Hola,%20quiero%20comprar%20Christian%20Dior%20Sauvage" target="_blank" class="buy-button">
-          Comprar ahora
-        </a>
-      </article>
+    <article class="product" id="elegantes">
+      <h2>Antonio Banderas Blue Seduction</h2>
+      <img src="img/perfume2.png" alt="Perfume Antonio Banderas Blue Seduction">
+      <p>Fresco y moderno, ideal para cualquier ocasión.</p>
+      <p class="precio">S/ 120</p>
+      <a href="https://wa.me/51961274199?text=Hola,%20quiero%20comprar%20Antonio%20Banderas%20Blue" target="_blank" class="buy-button">
+        Comprar ahora
+      </a>
+    </article>
 
-      <article class="product" id="elegantes">
-        <h2>Antonio Banderas Blue Seduction</h2>
-        <img src="img/perfume2.png" alt="Perfume Antonio Banderas Blue Seduction">
-        <p>Fresco y moderno, ideal para cualquier ocasión.</p>
-        <a href="https://wa.me/51961274199?text=Hola,%20quiero%20comprar%20Antonio%20Banderas%20Blue" target="_blank" class="buy-button">
-          Comprar ahora
-        </a>
-      </article>
+    <article class="product" id="clasicos">
+      <h2>Antonio Banderas Golden Secret</h2>
+      <img src="img/perfume3.png" alt="Perfume Golden Secret">
+      <p>Clásico, sofisticado y elegante.</p>
+      <p class="precio">S/ 140</p>
+      <a href="https://wa.me/51961274199?text=Hola,%20quiero%20comprar%20Golden%20Secret" target="_blank" class="buy-button">
+        Comprar ahora
+      </a>
+    </article>
 
-      <article class="product">
-        <h2>Antonio Banderas Golden Secret</h2>
-        <img src="img/perfume3.png" alt="Perfume Golden Secret">
-        <p>Clásico, sofisticado y elegante.</p>
-        <a href="https://wa.me/51961274199?text=Hola,%20quiero%20comprar%20Golden%20Secret" target="_blank" class="buy-button">
-          Comprar ahora
-        </a>
-      </article>
+    <article class="product" id="elegantes">
+      <h2>Le Male Elixir Parfum</h2>
+      <img src="img/perfume4.png" alt="Perfume Le Male Elixir">
+      <p>Intenso, seductor y adictivo.</p>
+      <p class="precio">S/ 380</p>
+      <a href="https://wa.me/51961274199?text=Hola,%20quiero%20comprar%20Le%20Male%20Elixir" target="_blank" class="buy-button">
+        Comprar ahora
+      </a>
+    </article>
 
-      <article class="product">
-        <h2>Le Male Elixir Parfum</h2>
-        <img src="img/perfume4.png" alt="Perfume Le Male Elixir">
-        <p>Intenso, seductor y adictivo.</p>
-        <a href="https://wa.me/51961274199?text=Hola,%20quiero%20comprar%20Le%20Male%20Elixir" target="_blank" class="buy-button">
-          Comprar ahora
-        </a>
-      </article>
+    <article class="product" id="frescos">
+      <h2>Scandal Absolu</h2>
+      <img src="img/perfume5.png" alt="Perfume Scandal Absolu">
+      <p>Pasión y sensualidad en cada aroma.</p>
+      <p class="precio">S/ 360</p>
+      <a href="https://wa.me/51961274199?text=Hola,%20quiero%20comprar%20Scandal%20Absolu" target="_blank" class="buy-button">
+        Comprar ahora
+      </a>
+    </article>
 
-      <article class="product">
-        <h2>Scandal Absolu</h2>
-        <img src="img/perfume5.png" alt="Perfume Scandal Absolu">
-        <p>Pasión y sensualidad en cada aroma.</p>
-        <a href="https://wa.me/51961274199?text=Hola,%20quiero%20comprar%20Scandal%20Absolu" target="_blank" class="buy-button">
-          Comprar ahora
-        </a>
-      </article>
-
-      <article class="product">
-        <h2>Born In Roma Uomo</h2>
-        <img src="img/perfume6.png" alt="Perfume Born In Roma Uomo">
-        <p>Expresa tu personalidad e individualidad.</p>
+    <article class="product" id="clasicos">
+      <h2>Born In Roma Uomo</h2>
+      <img src="img/perfume6.png" alt="Perfume Born In Roma Uomo">
+      <p>Expresa tu personalidad e individualidad.</p>
+        <p class="precio">S/ 360</p>
         <a href="https://wa.me/51961274199?text=Hola,%20quiero%20comprar%20Born%20In%20Roma" target="_blank" class="buy-button">
-          Comprar ahora
-        </a>
-      </article>
+        Comprar ahora
+      </a>
+  
+      
 
-    </section>
-  </main>
+    </article>
+
+  </section>
+</main>
 
   <footer>
 
     <section id="preguntas">
+      <br>
       <h2>Preguntas frecuentes</h2>
       <h3>¿Cómo comprar?</h3>
       <p>Haz clic en "Comprar ahora".</p>
@@ -106,10 +119,11 @@
       <p>3 a 5 días hábiles.</p>
     </section>
 
-    <form>
-      <h2>Contáctanos</h2>
-      <input type="text" placeholder="Nombre" required>
+     <form>
+      <h2>Contáctanos</h2><br>
+      <input type="text" placeholder="Nombre" required><br><br>
       <input type="email" placeholder="Email" required>
+      <br><br>
       <button>Enviar</button>
     </form>
 
