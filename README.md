@@ -1,166 +1,158 @@
-🖥️ Landing Page - Enter Tech School Tarea 01
-📌 Introducción
+# 🖥️ Landing Page - Enter Tech School Tarea 01
 
-Esta landing page fue creada con la ayuda de Copilot y ChatGPT, optimizando la visibilidad del código e integrando funciones como estilos directamente en la página.
+## 📌 Introducción
 
-✏️ Boceto 1.2
+Esta landing page fue creada **con la ayuda de Copilot y ChatGPT**, optimizando la visibilidad del código e integrando funciones como estilos directamente en la página.
 
-Contiene 6 perfumes, cada uno con botón de compra y precio, que redirige a un número telefónico.
+---
 
-Utiliza style.css responsive basado en grid-template-areas.
+## ✏️ Boceto 1.2
 
-Incluye pasarela de pagos simulada.
+* Contiene **6 perfumes**, cada uno con botón de compra y precio, que redirige a un número telefónico.
+* Utiliza **style.css responsive** basado en `grid-template-areas`.
+* Incluye **pasarela de pagos simulada**.
+* Se añadió un **home** y se integraron **Tailwind y Bootstrap** para estilos y grid.
+* Se modificaron todos los archivos usando ese contexto.
+* Se actualizaron y crearon ramas de Git como `Bootstrap` y `Tailwind`.
 
-Se añadió un home y se integraron Tailwind y Bootstrap para estilos y grid.
+---
 
-Se modificaron todos los archivos usando ese contexto.
+## 🤖 Uso de IA
 
-Se actualizaron y crearon ramas de Git como Bootstrap y Tailwind.
+* Se utilizó **ChatGPT y Copilot** para modificar contenido en `.CSS` y documentación.
+* Se ayudó especialmente con **styles.css** e **index.html**, integrando contenido previamente analizado y comprendido.
 
-🤖 Uso de IA
+---
 
-Se utilizó ChatGPT y Copilot para modificar contenido en .CSS y documentación.
+## 🎨 Tailwind CSS
 
-Se ayudó especialmente con styles.css e index.html, integrando contenido previamente analizado y comprendido.
+**Se utilizó para:**
 
-🎨 Tailwind CSS
+* Diseño del **hero** (imagen principal)
+* Layouts con **flexbox y grid**
+* Estilos rápidos sin escribir CSS personalizado
+* Creación de componentes: testimonios, navegación, secciones informativas
 
-Se utilizó para:
+**Clases importantes usadas:**
 
-Diseño del hero (imagen principal)
+**Layout**
 
-Layouts con flexbox y grid
+* `flex` → organiza elementos en fila o columna
+* `items-center` → centra verticalmente
+* `justify-center` → centra horizontalmente
+* `grid` → sistema de columnas
 
-Estilos rápidos sin escribir CSS personalizado
+**Espaciado**
 
-Creación de componentes: testimonios, navegación, secciones informativas
+* `p-6` → padding
+* `m-10` → margen
+* `gap-6` → espacio entre elementos
 
-Clases importantes usadas:
+**Tamaños**
 
-Layout
+* `w-20 h-20` → ancho y alto
+* `max-w-3xl` → ancho máximo
+* `h-screen` → alto de pantalla
 
-flex → organiza elementos en fila o columna
+**Estilos visuales**
 
-items-center → centra verticalmente
+* `bg-black` / `bg-white` → colores de fondo
+* `text-white` → color de texto
+* `rounded-lg` → bordes redondeados
+* `shadow-md` → sombras
 
-justify-center → centra horizontalmente
+**Imágenes**
 
-grid → sistema de columnas
-
-Espaciado
-
-p-6 → padding
-
-m-10 → margen
-
-gap-6 → espacio entre elementos
-
-Tamaños
-
-w-20 h-20 → ancho y alto
-
-max-w-3xl → ancho máximo
-
-h-screen → alto de pantalla
-
-Estilos visuales
-
-bg-black / bg-white → colores de fondo
-
-text-white → color de texto
-
-rounded-lg → bordes redondeados
-
-shadow-md → sombras
-
-Imágenes
-
+```css
 bg-[url('img/perfum.png')] bg-cover bg-center
+```
 
-bg-cover → cubre todo el contenedor
+* `bg-cover` → cubre todo el contenedor
+* `bg-center` → centra la imagen
 
-bg-center → centra la imagen
+**Overlay (degradado)**
 
-Overlay (degradado)
-
+```css
 bg-gradient-to-r from-black/80 via-black/40 to-transparent
+```
 
-Mejora la visibilidad del texto sobre imágenes
+* Mejora la visibilidad del texto sobre imágenes
 
-Efectos avanzados
+**Efectos avanzados**
 
-hover:shadow-xl → animación al pasar el mouse
+* `hover:shadow-xl` → animación al pasar el mouse
+* `transition` → suaviza cambios
+* `scale-105` → efecto zoom
 
-transition → suaviza cambios
+---
 
-scale-105 → efecto zoom
+## 🅱️ Bootstrap
 
-🅱️ Bootstrap
+**Se utilizó principalmente para:**
 
-Se utilizó principalmente para:
+* Formularios de compra
+* Botones de acción (comprar / WhatsApp)
+* Tarjetas (**cards**)
+* Organización del contenido
 
-Formularios de compra
+**Sistema de grid**
 
-Botones de acción (comprar / WhatsApp)
-
-Tarjetas (cards)
-
-Organización del contenido
-
-Sistema de grid
-
+```html
 <div class="container">
   <div class="row">
     <div class="col-md-6">Contenido</div>
     <div class="col-md-6">Contenido</div>
   </div>
 </div>
+```
 
-container → centra el contenido
+* `container` → centra el contenido
+* `row` → fila
+* `col` → columnas automáticas
+* `col-md-6` → ocupa la mitad en pantallas medianas
 
-row → fila
+**Componentes usados**
 
-col → columnas automáticas
+* **Cards**
 
-col-md-6 → ocupa la mitad en pantallas medianas
-
-Componentes usados
-
-Cards
-
+```html
 <div class="card shadow-sm">
   <div class="card-body">
     <h5 class="card-title">Datos de compra</h5>
   </div>
 </div>
+```
 
-Botones
+* **Botones**
 
+```html
 <button class="btn btn-primary">Finalizar compra</button>
+```
 
 Tipos:
 
-btn-primary → acción principal
+* `btn-primary` → acción principal
 
-btn-success → acción positiva (WhatsApp)
+* `btn-success` → acción positiva (WhatsApp)
 
-Formularios
+* **Formularios**
 
+```html
 <input class="form-control">
 <select class="form-select">
+```
 
-Inputs estilizados automáticamente
+* Inputs estilizados automáticamente
+* Diseño consistente y fácil de implementar
 
-Diseño consistente y fácil de implementar
+**Clases utilitarias útiles**
 
-Clases utilitarias útiles
-
-w-100 → ancho completo
-
-mt-3 → margen superior
-
-mb-3 → margen inferior
+* `w-100` → ancho completo
+* `mt-3` → margen superior
+* `mb-3` → margen inferior
 
 Ejemplo:
 
+```html
 <button class="btn btn-primary w-100 mt-3">Comprar</button>
+```
